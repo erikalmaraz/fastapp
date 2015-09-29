@@ -1,4 +1,4 @@
-body.home {
+.home {
   font-size: 14px;
   font-family: raleway;
   .nav-bar{
@@ -42,29 +42,41 @@ body.home {
     width: 100%;
     height: 95vh;
     background-color: #fff;
-    background-image: url('https://static.pexels.com/photos/8885/pexels-photo.jpeg');
-    background-size: cover;
-    background-position: bottom;
     z-index: 1;
+    video{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      margin-left: 50%;
+      z-index: 1;
+    }
     .opacity{
-      background: rgba(0, 0, 0, .45);
-      width: 100%;
-      height: 95vh;
-      z-index: 2;
+        background: rgba(27, 0, 25, 0.82);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 2;
     }
     .content-box{
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-      position: relative;
-      bottom: 550px;
-      margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        top: 155px;
+        z-index: 2;
+        text-align: center;
+        margin-left: 25px;
+        position: relative;
       .slogan-box{
         color: #fff;
-        font-size: 30px;
+        font-size: 50px;
         z-index: 2;
         font-weight: 300;
-        margin-top: 150px
+        margin-top: 100px
       }
       p{
         color: #fff;
@@ -74,10 +86,10 @@ body.home {
         margin-top: 20px;
       }
       .btn-blue{
-        background: #244FF6;
+        background: transparent;
         color: #fff;
         padding: 13px;
-        border: 1px solid #244FF6;
+        border: 1px solid #fff;
         width: 100px;
         font-size: 14px;
         margin: 0px auto;
@@ -85,106 +97,93 @@ body.home {
         margin-top: 70px;
         transition: 1s all ease;
         &:hover{
-          border: 1px solid #fff;
+          border: 1px solid #AD2859;
+          background: #AD2859;
         }
       }
     }
   }
   .title-sections{
-    color: #424244;
-    margin-top: 90px;
-    font-size: 22px;
+      max-width: 855px;
+      margin: 0px auto;
+      margin-top: 95px;
+      font-size: 23px;
+      font-weight: lighter;
+      line-height: 39px;
+      color: #3A3939;
     p{
       font-size: 13px;
     }
   }
-  .methods{
-    width: 100%;
-    height: 150px;
-    border-bottom: 1px solid #ddd;
-    background: #fff;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    .pay{
-      width: 300px;
-      margin-left: 30px;
-    }
-    .contact-number{
-      margin-left: 60px;
-      margin-top: -10px;
-      width: 300px;
-      h5{
-        position: relative;
-        right: 142px;
-      }
-    }
-    .security{
-      width: 300px;
-      margin-left: 30px;
-      margin-top: -10px;
-      h5{
-        right: 72px;
-        position: relative;
-      }
-    }
-    h5{
-      font-size: 14px;
-      font-weight: bold;
-      float: right;
-      margin-right: -10px;
-      margin-bottom: 0;
-      margin-top: 4px;
-      color: #1A1B21;
-    }
-    i{
-      font-size: 50px;
-      color: #244FF6;
-    }
-    p{
-      font-size: 13px;
-      margin-left: 75px;
-      margin-top: -20px;
+  .customers{
+      width: 100%;
+      min-height: 150px;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 35px;
+      z-index: 2;
       position: relative;
-    }
+      padding-bottom: 20px;
+      img{
+        width: 150px;
+      }
+      .customer-2{
+        margin-top: 40px;
+        padding-left: 60px;
+      }
+      .customer-3{
+        margin-top: 32px;
+        padding-left: 60px;
+      }
   }
-  .products{
+  .about-intro{
     width: 100%;
     text-align: center;
-    .products-content{
-      width: 100%;
-      margin-top: 60px;
-      display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
-      .box-product{
-          width: 295px;
-          height: 253px;
-          border: 1px solid #ddd;
-          overflow: hidden;
-          .opacity-products{
-            opacity: .8;
-            width: 100%;
-            top: -256px;
-            height: 100%;
-            background-color: #244FF6;
-            position: relative;
-            z-index: 2;
-          }
-          img{
-            width: 100%;
-            height: 100%;
-            opacity: .7;
-          }
+    .about-intro-content{
+        width: 100%;
+        max-width: 970px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding-top: 80px;
+    }
+    .testers{
+      width: 390px;
+      height: 210px;
+      background: #f8f8f8;
+      margin: 10px;
+      border: 1px solid rgba(208, 187, 199, 0.44);
+      .opinion{
+          text-align: center;
+          font-size: 15px;
+          color: rgb(102, 102, 102);
+          margin-top: 20px;
+          padding: 10px;
       }
+    }
+  }
+  .team{
+    width: 100%;
+    height: 650px;
+    background-color: #1e1f34;
+    margin-top: 50px;
+    .left-bar{
+        width: 275px;
+        min-height: 650px;
+        position: absolute;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        background: #fff;
     }
   }
   .contact{
     width: 100%;
     border-top: 1px solid #ddd;
-    margin-top: 40px;
     text-align: center;
     .contact-content{
       width: 90%;
@@ -217,4 +216,15 @@ body.home {
       margin: 25px;
     }
   }
+}
+
+// Responsive Web Design
+@media screen and (max-width: 515px){
+    .home{
+      .customers{
+        .customer-3{
+          padding-left: 0;
+        }
+      }
+    }
 }
