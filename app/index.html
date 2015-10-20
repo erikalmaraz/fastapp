@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./assets/css/main.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4erQcjtJtOQSMZIXCtZq7fMr_jggOkfg&callback=initMap">
+   </script>
   </head>
   <body class="home">
     <header>
@@ -19,10 +22,19 @@
         <nav class="nav-bar-menu">
           <a href="#">Home</a>
           <a href="#">¿Quienes somos?</a>
-          <a href="#">Productos</a>
-          <a href="#">Menu 3</a>
-          <a href="#">Menu 4</a>
+          <a href="#">Vende Apps!</a>
+          <a href="#">Desarrolla Apps!</a>
           <a href="#">Contacto</a>
+          <ul class="dropdown-first">
+            <li>
+              Productos
+              <ul class="dropdown-second-level">
+                <li>Basica</li>
+                <li>Presonalizada</li>
+                <li>Empresarial</li>
+              </ul>
+            </li>
+          </ul>
         </nav>
         <div class="nav-mobile">
           <i class="fa fa-bars"></i>
@@ -39,10 +51,10 @@
         <div class="slogan-box">
         Mobile Apps
           <p>
-            A menor costo
+            A mejor precio
           </p>
           <div class="btn-base">
-            Compra ya!
+            Descubre
           </div>
         </div>
       </div>
@@ -51,7 +63,7 @@
       <div class="about-intro-content">
           <div class="left-container">
             <div class="title-sections">
-                ¿Quienes Somos?
+                ¿Quiénes Somos?
             </div>
             <p>
               Somos una empresa de reciente creación conformada por personas
@@ -65,12 +77,12 @@
             <hr>
             <div class="team-circles">
               <span>Team:</span>
-              <img src="./assets/images/team1.jpg" alt="" />
-              <img src="./assets/images/silver.jpg" alt="" />
-              <img src="./assets/images/aaron.jpg" alt="" />
+              <img src="./assets/images/team1.jpg" id="erik_cruz" alt="" />
+              <img src="./assets/images/silver.jpg" id="silver_muñoz" alt="" />
+              <img src="./assets/images/aaron.jpg" id="aaron_vergara" alt="" />
             </div>
           </div>
-          <div class="right-container">
+          <div class="right-container first_right">
               <div class="ch-about">
                   <div class="icon-ch-container">
                     <i class="fa fa-rocket"></i>
@@ -86,11 +98,11 @@
               </div>
               <div class="ch-about">
                   <div class="icon-ch-container">
-                    <i class="fa fa-rocket"></i>
+                    <i class="fa fa-gg"></i>
                   </div>
                   <div class="content-container-ch">
                       <p class="title-content-ch">
-                        Alcance
+                        Flexibilidad
                       </p>
                       <p class="content-ch-paragraph">
                         Llevamos las soluciones moviles a Pymes , para que todos puedan tener uso de ellas.
@@ -99,17 +111,80 @@
               </div>
               <div class="ch-about">
                   <div class="icon-ch-container">
-                    <i class="fa fa-rocket"></i>
+                    <i class="fa fa-genderless"></i>
                   </div>
                   <div class="content-container-ch">
                       <p class="title-content-ch">
-                        Alcance
+                        Sencillez
                       </p>
                       <p class="content-ch-paragraph">
                         Llevamos las soluciones moviles a Pymes , para que todos puedan tener uso de ellas.
                       </p>
                   </div>
               </div>
+          </div>
+          <div class="right-container team_section inactive">
+            <div id="erik_cruz_team" class="team_member_container inactive">
+                <div class="img_team_member">
+                  <img src="./assets/images/team1.jpg" alt="" />
+                </div>
+                <div class="name_social">
+                  <p>
+                    Erik Cruz Almaraz
+                  </p>
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="info_member_team">
+                    <p>
+                      Chico de 16 años , apasionado por la tecnologia
+                      en especial el diseño y desarrollo web , actualmente curso la preparatoria.
+                    </p>
+                    <i>Co-Founder -CIO</i>
+                </div>
+            </div>
+
+            <div id="aaron_vergara_team" class="team_member_container inactive">
+                <div class="img_team_member">
+                  <img src="./assets/images/aaron.jpg" id="aaron_vergara" alt="" />
+                </div>
+                <div class="name_social">
+                  <p>
+                    Aaron Vergara
+                  </p>
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="info_member_team">
+                    <p>
+                      Buisness engineer con experiencia trabajando en Gobierno, ONG's y start-ups con la meta de masificar los beneficios de la tecnología.
+                    </p>
+                    <i>Co-Founder - CEO</i>
+                </div>
+            </div>
+
+            <div id="silver_muñoz_team" class="team_member_container inactive">
+                <div class="img_team_member">
+                  <img src="./assets/images/silver.jpg" alt="" />
+                </div>
+                <div class="name_social">
+                  <p>
+                    Silver Muñoz
+                  </p>
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-linkedin"></i>
+                </div>
+                <div class="info_member_team">
+                    <p>
+                      "Soy recién graduado de la carrera de administración de empresas especializado en marketing y negocios internacionales.""
+                    </p>
+                    <i>Co-Founder - Marketing</i>
+                </div>
+            </div>
+
           </div>
       </div>
     </section>
@@ -120,175 +195,71 @@
             Y animate a adquirir una :)
           </p>
       </div>
+      <div class="buttons-products">
+        <button type="button" class="button_todas" name="button">Todas</button>
+        <button type="button" class="button_basica" name="button">Basica</button>
+        <button type="button" class="button_personalizada" name="button">Personalizada</button>
+        <button type="button" class="button_empresarial" name="button">Empresarial</button>
+      </div>
       <div class="content-portafolio">
-        <div class="item-portafolio" id="one-p">
+        <div class="item-portafolio basica" id="one-p">
         </div>
-        <div class="item-portafolio" id="two-p">
+        <div class="item-portafolio basica" id="two-p">
         </div>
-        <div class="item-portafolio" id="three-p">
+        <div class="item-portafolio personalizada" id="three-p">
         </div>
-        <div class="item-portafolio" id="four-p">
+        <div class="item-portafolio empresarial" id="four-p">
         </div>
-        <div class="item-portafolio" id="five-p">
+        <div class="item-portafolio empresarial" id="five-p">
         </div>
-        <div class="item-portafolio" id="six-p">
+        <div class="item-portafolio personalizada" id="six-p">
         </div>
-        <div class="item-portafolio" id="seven-p">
+        <div class="item-portafolio personalizada" id="seven-p">
         </div>
-        <div class="item-portafolio" id="eigth-p">
+        <div class="item-portafolio basica" id="eigth-p">
         </div>
-        <div class="item-portafolio" id="nine-p">
+        <div class="item-portafolio personalizada" id="nine-p">
         </div>
       </div>
     </section>
-    <section class="packs">
-      <div class="title-sections">
-          ¿Cules son nuestros precio?
-          <p>
-            ¿Te convencimos?
-          </p>
+    <section class="container-map">
+      <div id="map">
       </div>
-      <div class="container-packs">
-          <div class="container-dates-packs">
-              <div class="top-pack-dates">
-                  Basico
-              </div>
-              <div class="price">
-                  $16,000
-              </div>
-              <ul>
-                <li>Sobre tu empresa</li>
-                <li>Contacto</li>
-                <li>Sobre tu empresa</li>
-                <li>Mapa</li>
-                <li>Blog</li>
-                <li>Redes Sociales</li>
-                <li>Integracion con sitio web</li>
-                <li>Notificaciones</li>
-                <li>Videos</li>
-                <li>Geolocalizacion de sucursales</li>
-                <li>Productos</li>
-                <li><a href="#" class="btn-base">Ordenar!</a></li>
-              </ul>
-          </div>
-          <div class="container-dates-packs">
-              <div class="top-pack-dates">
-                  Personalizado
-              </div>
-              <div class="price">
-                  $30,000
-              </div>
-              <ul>
-                <li>Todo  lo del basico</li>
-                <li>Tienda Online</li>
-                <li>Creacion de sitio web</li>
-                <li>Red Social propia</li>
-                <li>Programa de lealtad</li>
-                <li>Lector QR</li>
-                <li>Radio</li>
-                <li>Check-in</li>
-                <li>Contenido Personalizado</li>
-                <li>Integracion con otras Apps</li>
-                <li>Streaming</li>
-                <li><a href="#" class="btn-base">Ordenar!</a></li>
-              </ul>
-          </div>
-          <div class="container-dates-packs">
-              <div class="top-pack-dates">
-                  Empresarial
-              </div>
-              <div class="price">
-                Cotizacion Personalizada
-              </div>
-              <ul>
-                <li>Todo lo de los paquetes anteriores</li>
-                <li>CRM *</li>
-                <li>ERP *</li>
-                <li>Inteligencia de negocios</li>
-                <li>Analiticas de negocios</li>
-                <li>Arquitectura de negocios</li>
-                <li>Productos Comerciales</li>
-                <li><a href="#" class="btn-base">Cotizar</a></li>
-              </ul>
-          </div>
+      <div class="opacity">
       </div>
-    </section>
-    <section class="team">
-      <div class="title-sections">
-          Team
-          <p>
-            Conoce un poco sobre los creadores de esta Startup
-          </p>
-      </div>
-        <div class="team-container">
-            <div class="person-team">
-                <div class="img-team" id="first-member">
-                </div>
-                <div class="container-text-team">
-                    <p>
-                      Erik Cruz Almaraz
-                    </p>
-                    <i>Co-Founder</i>
-                    <p class="miniature-text">
-                      Web Developer
-                    </p>
-                </div>
-            </div>
-            <div class="person-team">
-                <div class="img-team" id="two-member">
-                </div>
-                <div class="container-text-team">
-                    <p>
-                      Aaron Vergara
-                    </p>
-                    <i>Co-Founder</i>
-                    <p class="miniature-text">
-                    Apps Developer
-                    </p>
-                </div>
-            </div>
-            <div class="person-team">
-                <div class="img-team" id="third-member">
-                </div>
-                <div class="container-text-team">
-                    <p>
-                      Silver Muñoz
-                    </p>
-                    <i>Co-Founder</i>
-                    <p class="miniature-text">
-                      Marketing - Ventas
-                    </p>
-                </div>
-            </div>
-        </div>
     </section>
     <section class="contact">
       <div class="container-contact">
         <div class="left-container">
             <div class="title-sections">
-                ¿Donde trabajamos?
+                ¿Dónde trabajamos?
             </div>
             <p>
               Nos gusta que nos contacten ¿sabes? , Por eso a continuacion te dejamos la direccion de nuestras oficinas.
             </p>
             <p>
-              Ademas , te dejamos nuestro numero telefonico y correo de FastApp
+              Además , te dejamos nuestro numero telefonico y correo de FastApp
             </p>
             <hr>
             <div class="direction">
                <p>
-                 WTC Distrito Federal - Piso 28 - Oficina 12
+                  Montecitos 30, Nápoles, Benito Juárez, 03810, México D.F. Piso 28 oficina 12
                </p>
             </div>
             <hr>
             <div class="conctac-info">
               <i class="fa fa-envelope-o"></i> <span>hey@fastapp.mx</span>
               <br>
-              <i class="fa fa-phone"></i><span>(+52) 5515908203</span>
+              <i class="fa fa-phone"></i><span>(+52) 42094330</span>
+              <div class="social-networks">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+              </div>
             </div>
             <hr>
             <div class="message">
-                Si quieres hacer mas facil tu contacto , usa el siguiente formulario ;)
+                Si quieres hacer mas fácil tu contacto , usa el siguiente formulario ;)
             </div>
         </div>
         <div class="right-container">
@@ -303,15 +274,22 @@
                 <input type="text" name="name" placeholder="Tu correo">
                 <br>
                 <textarea name="name" rows="8" cols="40"></textarea>
+                <button type="button" name="button">Ya esta!</button>
             </form>
         </div>
       </div>
     </section>
     <footer>
         <section class="footer-section">
-          <i class="fa fa-facebook"></i>
-          Todos los derechos reservados.
-          <i class="fa fa-twitter"></i>
+            <p>
+              Copyright © FastApp - Todos los Derechos Reservados
+            </p>
+            <p>
+              Terminos y Condiciones
+            </p>
+            <p>
+                Aviso de privacidad
+            </p>
         </section>
     </footer>
   </body>
