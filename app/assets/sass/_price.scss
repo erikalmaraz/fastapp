@@ -1,0 +1,102 @@
+.price{
+  &.first-page-price{
+    .intro-price{
+        background-image: url("https://static.pexels.com/photos/9041/pexels-photo.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .opacity{
+        background: rgba(0, 0, 0, 0.77);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 2;
+    }
+    .title-sections{
+      padding-top: 80px;
+    }
+  }
+  .intro-price{
+    background-color: #000501;
+    width: 100%;
+    height: 90vh;
+  }
+  .btn-base{
+    background-color: #fff;
+    color: #333;
+  }
+  .features{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+    &.black{
+      background: #000501;
+      margin-bottom: 0;
+      height: 400px;
+      h2{
+        color: #fff;
+        font-weight: lighter;
+        padding-top: 75px;
+        font-size: 33px;
+        font-family: raleway;
+      }
+      p{
+        color: #fff;
+        margin-top: 55px;
+        margin-bottom: -35px;
+      }
+      .btn-base{
+        width: 300px;
+        background-color: #292929;
+        color: #fff;
+      }
+    }
+    .content-features{
+      width: 90%;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0px auto;
+      justify-content: center;
+      height: 500px;
+      margin-top: 90px;
+      .features-min{
+        width: 300px;
+        height: 115px;
+        margin: 10px;
+        .miniature-feature{
+          background-color: #292929;
+          color: #fff;
+          padding: 13px;
+          font-size: 25px;
+          border-radius: 50%;
+          float: left;
+          width: 30px;
+          height: 30px;
+          line-height: 32px;
+          transition: 1s all ease;
+          &:hover{
+            background-color: #080158;
+          }
+        }
+        .title-feature-min{
+          font-size: 14px;
+          color: #292929;
+          margin-top: 12px;
+          text-align: left;
+          left: 25px;
+          position: relative;
+        }
+        .description-feature-min{
+          font-size: 13px;
+          margin-top: 15px;
+          text-align: left;
+          margin-left: 82px;
+        }
+      }
+    }
+  }
+  .title-sections{
+    margin-top: 65px;
+  }
+}
